@@ -1,23 +1,23 @@
 ---
 layout: default
 ---
-    <section class="raio-posts-container">
-        <article class="raio-post" itemscope itemtype="http://schema.org/BlogPosting">
-            <div class="raio-post-info">
+    <section class="natalia-posts-container">
+        <article class="natalia-post" itemscope itemtype="http://schema.org/BlogPosting">
+            <div class="natalia-post-info">
               <!-- <span><strong>tags:</strong> <a href="">nada</a> , <a href="">inicial</a> </span> -->
-              <span class="raio-post-date">
+              <span class="natalia-post-date">
                     {% include snippets/page-date.html %}   
               </span>                            
-              <span class="raio-post-comments-count">
-                  <i class="raicon-balao raio-post-comments-count-icon"></i>
+              <span class="natalia-post-comments-count">
+                  <i class="raicon-balao natalia-post-comments-count-icon"></i>
                   <a href="{{site.url}}{{ page.url }}#disqus_thread" data-disqus-url="{{site.url}}{{ page.url }}">
                     Comentários
                   </a>                                              
               </span>
             </div>
-            <h2 class="raio-post-title" itemprop="headline">{{ page.title }}</h2>            
-            <!-- <hr class="raio-separator raio-separator-primary"> -->
-            <div class="raio-post-content" itemprop="articleBody">
+            <h2 class="natalia-post-title" itemprop="headline">{{ page.title }}</h2>            
+            <!-- <hr class="natalia-separator natalia-separator-primary"> -->
+            <div class="natalia-post-content" itemprop="articleBody">
                 <meta itemprop="url" content="{{page.url | prepend: site.url }}" />
                 <meta itemprop="keywords" content="{% for tag in page.tags %}{{tag}}, {% endfor %}"/>            
                 <img src="{{page.image}}" alt='Imagem de exibição para "{{page.title}}"' title="{{page.title}}" itemprop="image">                

@@ -1,56 +1,56 @@
-.raio-header
+.natalia-header
    padding: spacing(2)
    @media (min-width: $screen-tablet-min)
       padding: spacing(3) spacing(2)
    background-color: white
    @include m-clearfix  
    
-   .raio-header-title
+   .natalia-header-title
       font-size: 16px
       @include inline-block
       float: left
       font-weight: 100
          
-   .raio-header-icon
+   .natalia-header-icon
       margin-right: spacing(1)
       color: $color-orange
    
-   .raio-header-container
+   .natalia-header-container
       max-width: $screen-tablet-min
       margin: 0 auto
       @media (min-width: $screen-desktop-min)
          max-width: $screen-desktop-min
       
-   + .raio-body
+   + .natalia-body
       margin-top: spacing(2)      
       
    // Menu
-   .raio-header-menu-toggle
+   .natalia-header-menu-toggle
       float: right 
       cursor: pointer
       @media (min-width: $screen-phone-min)
          display: none
    
-   .raio-header-menu-checkbox     
+   .natalia-header-menu-checkbox     
       display: none 
       &:not(:checked)
-         ~ .raio-header-menu
+         ~ .natalia-header-menu
             display: none
       &:checked
-         ~ .raio-header-menu
+         ~ .natalia-header-menu
             display: initial   
       @media (min-width: $screen-phone-min)                     
          &:not(:checked),
          &:checked
-            ~ .raio-header-menu
+            ~ .natalia-header-menu
                display: initial
 
-   .raio-header-menu
+   .natalia-header-menu
       float: left
       clear: both      
-      .raio-header-menu-icon
+      .natalia-header-menu-icon
          margin-right: spacing(1)
-      .raio-header-menu-item
+      .natalia-header-menu-item
          margin-bottom: spacing(1)
          margin-top: spacing(1)
          list-style: none
@@ -62,9 +62,9 @@
       @media (min-width: $screen-phone-min)                  
          float: right
          clear: none
-         .raio-header-menu-item
+         .natalia-header-menu-item
             display: inline
-            + .raio-header-menu-item
+            + .natalia-header-menu-item
                margin-left: spacing(2)
    a
       color: $color-blue

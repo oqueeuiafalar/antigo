@@ -1,7 +1,7 @@
 // # Posts
 // ## Posts container
 //
-.raio-posts-container  
+.natalia-posts-container  
    @include m-clearfix
    @media (min-width: $screen-tablet-min)
       width: calc((100%/3) * 2)   
@@ -9,7 +9,7 @@
    @media (min-width: $screen-desktop-min)      
       width: calc((100%/4) * 3)   
       float: left      
-   + .raio-widgets-container      
+   + .natalia-widgets-container      
       margin-top: spacing(2)
       @media (min-width: $screen-tablet-min)
          margin-top: 0
@@ -22,26 +22,26 @@
 
 // ## Post
 //
-.raio-post   
+.natalia-post   
    background-color: white
    padding: spacing(2)
    @media (min-width: $screen-desktop-min)
       padding: spacing(3)
-   + .raio-post,
-   + .raio-pagination
+   + .natalia-post,
+   + .natalia-pagination
       margin-top: spacing(2)
       color: #333
-   .raio-post-title,
-   .raio-post-title > a
+   .natalia-post-title,
+   .natalia-post-title > a
       color: $color-blue      
-      + .raio-post-content
+      + .natalia-post-content
          margin-top: spacing(1)
-   .raio-post-content         
+   .natalia-post-content         
       a
          color: $color-orange
          &:hover
             color: $color-yellow
-         &.raio-post-excerpt-link         
+         &.natalia-post-excerpt-link         
             color: $color-gray-dark                     
             &:hover
                color: $color-yellow
@@ -80,15 +80,15 @@
          tbody
             tr:nth-child(even)
                background-color: $color-silver
-   .raio-post-info
+   .natalia-post-info
       margin-top: spacing(1)
       font-size: 13px
       text-transform: uppercase
       color: $color-gray
       font-family: $font-family-bold
-   .raio-post-date
+   .natalia-post-date
       margin-right: spacing(1)      
-   .raio-post-comments-count
+   .natalia-post-comments-count
       color: $color-success
-      .raio-post-comments-count-icon
+      .natalia-post-comments-count-icon
          font-size: 8pt
