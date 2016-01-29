@@ -20,7 +20,7 @@ layout: default
             <div class="natalia-post-content" itemprop="articleBody">
                 <meta itemprop="url" content="{{page.url | prepend: site.url }}" />
                 <meta itemprop="keywords" content="{% for tag in page.tags %}{{tag}}, {% endfor %}"/>            
-                <img src="{{page.image}}" alt='Imagem de exibição para "{{page.title}}"' title="{{page.title}}" itemprop="image">                
+                <!-- <img src="{{page.image}}" alt='Imagem de exibição para "{{page.title}}"' title="{{page.title}}" itemprop="image"> -->                
                 {{ content }}
                 </p>
             </div>

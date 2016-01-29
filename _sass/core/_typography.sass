@@ -1,25 +1,24 @@
 // # Tipografia básica
 h1
    font-size: 28px
-   font-family: $main-font-family-bold
-   font-weight: $main-font-weight-bold
+   @include get-main-font(bold)
 
 h2
    font-size: 25px   
-   font-family: $main-font-family-bold
+   @include get-main-font(bold)
 
 h3
    font-size: 18px
-   font-family: $main-font-family-semibold
+   @include get-main-font(semibold)
 
 h4
    font-size: 14px
-   font-family: $main-font-family-semibold
+   @include get-main-font(semibold)
 
 h5, 
 h6   
    font-size: 13px
-   font-family: $main-font-family-semibold
+   @include get-main-font(semibold)
 
 code
    background-color: $color-gray-light
