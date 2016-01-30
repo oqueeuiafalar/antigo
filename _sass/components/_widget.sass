@@ -3,16 +3,24 @@
         
 .natalia-widgets   
    background-color: white      
-   padding: spacing(2)      
+   padding: 0 spacing(2) spacing(2) spacing(2)
    &.natalia-widgets-special
-      background-color: $color-blue
-      color: #fff            
+      .natalia-widget
+         .natalia-widget-title
+            text-align: center
+            @include get-main-font(semibold)
+            font-size: 13px
+            text-transform: uppercase
+            margin-top: spacing(1)
    + .natalia-widgets
       margin-top: spacing(2)   
    .natalia-widget
       .natalia-widget-title
          @include get-main-font(bold)
          margin-bottom: spacing(1)
+      .natalia-widget-full-image
+         max-width: calc(100% + 32px)
+         margin-left: -16px
       + .natalia-widget
          margin-top: spacing(1)
    img
