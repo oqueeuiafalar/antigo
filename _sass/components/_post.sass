@@ -38,6 +38,8 @@
       + .natalia-post-content
          margin-top: spacing(1)
    .natalia-post-content         
+      font-size: 14px
+      line-height: 1.9   
       a
          color: $color-orange
          &:hover
@@ -55,15 +57,24 @@
             max-width: calc(100% + 48px)
             margin-left: -24px         
 
-      p, ul, h1, h2, h3
+      p
          margin-top: spacing(2)      
          margin-bottom: spacing(2)  
-         font-size: 14px
-         line-height: 1.9
          a
             max-width: 100%
             white-space: pre-wrap
             word-break: break-all         
+      ul 
+         margin-top: spacing(2)      
+         margin-bottom: spacing(2)  
+         font-size: inherit
+         line-height: 1.9                 
+      h2
+         font-size: 16px
+         text-transform: uppercase            
+      h3
+         font-size: 12px
+         text-transform: uppercase                     
       hr 
          border-width: 1px 0 0 0
          border-style: solid 
