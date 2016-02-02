@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Receita de bolo de maracujá"
-date:   2016-01-26 20:34:05
+date:   2016-02-01 20:34:05
 categories: receitas
 ---
 ![alt text][imagem1]

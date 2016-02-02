@@ -31,10 +31,12 @@
    + .natalia-pagination
       margin-top: spacing(2)
       color: #333
+   .natalia-post-title
+      text-align: center
    .natalia-post-title,
    .natalia-post-title > a
       color: $color-blue      
-      text-transform: uppercase
+      text-transform: uppercase      
       + .natalia-post-content
          margin-top: spacing(1)
    .natalia-post-content         
@@ -49,7 +51,7 @@
             &:hover
                color: $color-yellow
                text-decoration: underline
-      img
+      img, iframe
          max-width: 100%
          max-width: calc(100% + 32px)
          margin-left: -16px
@@ -109,9 +111,10 @@
       text-transform: uppercase
       color: $color-gray
       @include get-main-font(semibold)
+      text-align: center
    .natalia-post-date
       margin-right: spacing(1)      
    .natalia-post-comments-count
       color: $color-success
       .natalia-post-comments-count-icon
-         font-size: 8pt
+         font-size: inherit
