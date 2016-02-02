@@ -2,6 +2,10 @@
    padding: spacing(2)
    background-color: white
    @include m-clearfix
+   @media (min-width: $screen-tablet-min)   
+      position: fixed
+      top: 0
+      width: 100%
    
    .natalia-header-title
       font-size: 16px
@@ -17,11 +21,14 @@
    .natalia-header-container
       max-width: $screen-tablet-min
       margin: 0 auto
+
       @media (min-width: $screen-desktop-min)
          max-width: $screen-desktop-min
       
    + .natalia-body
       margin-top: spacing(2)      
+      @media (min-width: $screen-tablet-min)   
+         padding-top: 56px
       
    // Menu
    .natalia-header-menu-toggle
