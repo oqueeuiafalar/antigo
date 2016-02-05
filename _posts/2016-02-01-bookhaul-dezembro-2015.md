@@ -3,6 +3,7 @@ layout: post
 title:  "[video] Bookhaul Dezembro 2015 - De 10 anos com Mafalda à Geek Love"
 date:   2016-02-02
 categories: literatura
+published: False
 ---
 
 <iframe width="750" height="650" src="https://www.youtube.com/embed/C5qU-QcP1GA" frameborder="0" allowfullscreen></iframe>

@@ -3,10 +3,8 @@ layout: post
 title:  "Receita de bolo de maracujá"
 date:   2016-02-01 20:34:05
 categories: receitas
+image: http://natalia.blog.br/wp-content/uploads/2016/01/receita-bolo-de-coco-com-calda-de-maracuj%C3%A1-1024x768.jpg
 ---
-![alt text][imagem1]
-
-Oi gente, tudo bem?
 
 Eu sou apaixonada por cocada desde que eu me conheço por gente. Lembro que quando criança minha tia Cida fazia uma cocada de comer rezando, e minha mãe faz uma cocada de comer de colher que meu Deus, é gostoso demais, não há dieta que resista haha, fora essas cocadas deliciosas dos mais diversos sabores que são vendidas nas ruas/parques.
 
