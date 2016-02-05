@@ -2,57 +2,58 @@
    padding: spacing(2)
    background-color: white
    @include m-clearfix
-   @media (min-width: $screen-tablet-min)   
+   z-index: 999
+   @media (min-width: $screen-tablet-min)
       position: fixed
       top: 0
       width: 100%
-   
+
    .natalia-header-title
       font-size: 16px
       @include inline-block
       float: left
-      @include get-main-font(semibold)      
+      @include get-main-font(semibold)
 
-         
+
    .natalia-header-icon
       margin-right: spacing(1)
       color: $color-orange
-   
+
    .natalia-header-container
       max-width: $screen-tablet-min
       margin: 0 auto
 
       @media (min-width: $screen-desktop-min)
          max-width: $screen-desktop-min
-      
+
    + .natalia-body
-      margin-top: spacing(2)      
-      @media (min-width: $screen-tablet-min)   
+      margin-top: spacing(2)
+      @media (min-width: $screen-tablet-min)
          padding-top: 56px
-      
+
    // Menu
    .natalia-header-menu-toggle
-      float: right 
+      float: right
       cursor: pointer
       @media (min-width: $screen-phone-min)
          display: none
-   
-   .natalia-header-menu-checkbox     
-      display: none 
+
+   .natalia-header-menu-checkbox
+      display: none
       &:not(:checked)
          ~ .natalia-header-menu
             display: none
       &:checked
          ~ .natalia-header-menu
-            display: initial   
-      @media (min-width: $screen-phone-min)                     
+            display: initial
+      @media (min-width: $screen-phone-min)
          &:not(:checked),
          &:checked
             ~ .natalia-header-menu
                display: initial
 
    .natalia-header-menu
-      clear: both      
+      clear: both
       .natalia-header-menu-icon
          margin-right: spacing(1)
       .natalia-header-menu-item
@@ -63,10 +64,10 @@
          @include get-main-font(semibold)
          text-transform: uppercase
          font-size: 11px
-      
+
          &:last-child
             margin-bottom: 0
-      @media (min-width: $screen-phone-min)                  
+      @media (min-width: $screen-phone-min)
          clear: none
          .natalia-header-menu-item
             display: inline
@@ -74,5 +75,5 @@
                margin-left: spacing(2)
    a
       color: $color-blue
-      &:hover      
-         color: $color-orange     
+      &:hover
+         color: $color-orange
