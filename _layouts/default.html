@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
   {% include head.html %}
-  
+
   <body class="{{page.class}}">
-    {% include plugins/fb-page-import.html %}        
+    {% include plugins/fb-page-import.html %}
     {% include header.html %}
-    
+
     <main class="natalia-body">
-      <a class="logo-box" href="/">
-        <h1 class="logo logo-header">O que eu ia falar? Moda, decoração, literatura, cinema.</h1>
-      </a>
-        {{ content }} 
+      <div class='u-clearfix'>
+        <a class="logo-box" href="/">
+          <h1 class="logo logo-header">O que eu ia falar? Moda, decoração, literatura, cinema.</h1>
+        </a>
+        {% include widgets/social-list.html %}
+
+        <input type='text' placeholder="Buscar..." class='form-input form-input-medium'>
+
+      </div>
+
+        {{ content }}
         <aside class="natalia-widgets-container">
           <section class="natalia-widgets">
-            {% include widgets/author-information.html %}        
-          </section>          
+            {% include widgets/author-information.html %}
+          </section>
+          <section class="natalia-widgets">
+          {% include widgets/site-links.html %}
+          </section>
         </aside>
     </main>
 
