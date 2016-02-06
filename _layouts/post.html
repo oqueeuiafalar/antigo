@@ -4,28 +4,27 @@ layout: default
     <section class="natalia-posts-container">
         <article class="natalia-post" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="natalia-post-info">
+              <span class="natalia-post-date">{% include snippets/page-date.html %}</span>
               <!-- <span><strong>tags:</strong> <a href="">nada</a> , <a href="">inicial</a> </span> -->
-              <span class="natalia-post-date">
-                    {% include snippets/page-date.html %}   
-              </span>                            
-              <span class="natalia-post-comments-count">
-                  <a href="{{site.url}}{{ page.url }}#disqus_thread" data-disqus-url="{{site.url}}{{ page.url }}">
-                    <i class="fa fa-comment natalia-post-comments-count-icon"></i>
-                    <span>Comentários</span>
-                  </a>                                              
+              <h2 class="natalia-post-title">
+                 <a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              </h2>
+
+              <span class="natalia-post-category">
+                  <i>em</i>
+                  <a href class="natalia-post-category-name">{{ page.categories }}</a>
               </span>
             </div>
-            <h2 class="natalia-post-title" itemprop="headline">{{ page.title }}</h2>            
-            <!-- <hr class="natalia-separator natalia-separator-primary"> -->
             <div class="natalia-post-content" itemprop="articleBody">
                 <meta itemprop="url" content="{{page.url | prepend: site.url }}" />
-                <meta itemprop="keywords" content="{% for tag in page.tags %}{{tag}}, {% endfor %}"/>            
-                <img src="{{page.image}}" alt='Imagem de exibição para "{{page.title}}"' title="{{page.title}}" itemprop="image">                
+                <meta itemprop="keywords" content="{% for tag in page.tags %}{{tag}}, {% endfor %}"/>
+                <img src="{{page.image}}" alt='Imagem de exibição para "{{page.title}}"' title="{{page.title}}" itemprop="image">
                 {{ content }}
                 </p>
             </div>
+            {% include widgets/post-options.html %}
             {{% if page.comments == true % }}
-            {% include plugins/disqus.html %}            
+            {% include plugins/disqus.html %}
             {{% endif %}}
-        </article>          
+        </article>
     </section>

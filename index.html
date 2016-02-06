@@ -8,10 +8,15 @@ layout: default
             <div class="natalia-post-info">
               <span class="natalia-post-date">{% include snippets/post-date.html %}</span>
               <!-- <span><strong>tags:</strong> <a href="">nada</a> , <a href="">inicial</a> </span> -->
+              <h2 class="natalia-post-title">
+                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+
+              <span class="natalia-post-category">
+                  <i>em</i>
+                  <a href class="natalia-post-category-name">{{ post.categories }}</a>
+              </span>
             </div>
-            <h2 class="natalia-post-title">
-               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
             <div class="natalia-post-content">
                 <a href="{{ post.url | prepend: site.url }}" class="natalia-post-excerpt-link" title='Clique para continuar lendo sobre "{{post.title}}"'>
                   <img src="{{post.image}}" alt='Imagem de exibição para "{{post.title}}"' title="{{post.title}}">
