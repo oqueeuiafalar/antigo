@@ -28,3 +28,30 @@
 			color: $color-link-active
 			> .natalia-post-options-icon
 				@include m-animation(kTextShadowUpFadeOut 2s)
+
+
+	.natalia-post-options-author
+		@include m-clearfix
+		font-size: 13px
+		margin-bottom: spacing(1)
+		padding-top: spacing(1)
+		color: $color-text-secundary
+
+		.natalia-post-options-author-image
+			float: left
+
+		.natalia-post-options-author-information
+			float: left
+			padding-left: spacing(2)
+			margin-top: spacing(1)
+			position: relative
+			max-width: calc(100% - 50px)
+			@media (min-width: $screen-tablet-min)
+				top: 8px // ajuste arbitrario
+
+		.natalia-post-options-author-name
+			display: block
+			@include get-main-font(semibold)
+
+		.natalia-post-options-author-description
+			display: block
