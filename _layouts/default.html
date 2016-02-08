@@ -5,18 +5,19 @@
 
   <body class="{{page.class}}">
     {% include plugins/fb-page-import.html %}
-    {% include header.html %}
+    {% include nav.html %}
 
     <main class="natalia-body">
-      <div class='u-clearfix'>
+      <header class='u-clearfix natalia-header'>
+
         <a class="logo-box" href="/">
-          <h1 class="logo logo-header">O que eu ia falar? Moda, decoração, literatura, cinema.</h1>
+          <h1 class="logo logo-header-image">O que eu ia falar? Moda, decoração, literatura, cinema.</h1>
         </a>
         {% include widgets/social-list.html %}
 
         <input type='text' placeholder="Buscar..." class='form-input form-input-medium'>
 
-      </div>
+      </header>
 
         {{ content }}
         <aside class="natalia-widgets-container">

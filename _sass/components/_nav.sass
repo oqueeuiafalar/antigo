@@ -1,4 +1,4 @@
-.natalia-header
+.natalia-nav
    padding: spacing(2)
    background-color: white
    @include m-clearfix
@@ -8,18 +8,18 @@
       top: 0
       width: 100%
 
-   .natalia-header-title
+   .natalia-nav-title
       font-size: 16px
       @include inline-block
       float: left
       @include get-main-font(semibold)
 
 
-   .natalia-header-icon
+   .natalia-nav-icon
       margin-right: spacing(1)
       color: $color-orange
 
-   .natalia-header-container
+   .natalia-nav-container
       max-width: $screen-tablet-min
       margin: 0 auto
 
@@ -32,31 +32,31 @@
          padding-top: 56px
 
    // Menu
-   .natalia-header-menu-toggle
+   .natalia-nav-menu-toggle
       float: right
       cursor: pointer
       @media (min-width: $screen-phone-min)
          display: none
 
-   .natalia-header-menu-checkbox
+   .natalia-nav-menu-checkbox
       display: none
       &:not(:checked)
-         ~ .natalia-header-menu
+         ~ .natalia-nav-menu
             display: none
       &:checked
-         ~ .natalia-header-menu
+         ~ .natalia-nav-menu
             display: initial
       @media (min-width: $screen-phone-min)
          &:not(:checked),
          &:checked
-            ~ .natalia-header-menu
+            ~ .natalia-nav-menu
                display: initial
 
-   .natalia-header-menu
+   .natalia-nav-menu
       clear: both
-      .natalia-header-menu-icon
+      .natalia-nav-menu-icon
          margin-right: spacing(1)
-      .natalia-header-menu-item
+      .natalia-nav-menu-item
          margin-bottom: spacing(1)
          margin-top: spacing(1)
          list-style: none
@@ -69,9 +69,9 @@
             margin-bottom: 0
       @media (min-width: $screen-phone-min)
          clear: none
-         .natalia-header-menu-item
+         .natalia-nav-menu-item
             display: inline
-            + .natalia-header-menu-item
+            + .natalia-nav-menu-item
                margin-left: spacing(2)
    a
       color: $color-blue
