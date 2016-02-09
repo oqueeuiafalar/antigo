@@ -8,15 +8,17 @@
     {% include nav.html %}
 
     <main class="natalia-body">
-      <header class='u-clearfix natalia-header'>
+      <header class='natalia-header'>
 
-        <a class="logo-box" href="/">
-          <h1 class="logo logo-header-image">O que eu ia falar? Moda, decoração, literatura, cinema.</h1>
+        <a class="natalia-header-logo" href="/">
+          <h1 class="logo natalia-header-logo-image">O que eu ia falar? Moda, decoração, literatura, cinema.</h1>
         </a>
-        {% include widgets/social-list.html %}
-
-        <input type='text' placeholder="Buscar..." class='form-input form-input-medium'>
-
+        <div class="natalia-header-links">
+          <div class="p-float-right">
+            {% include widgets/social-list.html %}
+            <input type='text' placeholder="Buscar..." class='form-input form-input-medium'>
+          </div>
+        </div>
       </header>
 
         {{ content }}
