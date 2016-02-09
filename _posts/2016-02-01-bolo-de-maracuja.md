@@ -10,6 +10,9 @@ Eu sou apaixonada por cocada desde que eu me conheço por gente. Lembro que quan
 
 E além de toda essas cocadas mais tradicionais, minha mãe resolve as vezes fazer esse bolo cocada que é divino (sério, vocês precisam experimentar) principalmente por causa dessa calda de maracujá que dá um azedinho todo especial.
 
+<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/jota.teles/posts/552848361544784" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/jota.teles/posts/552848361544784"><p>Ideia: Site de financiamento coletivo para extens&#xe3;o de licen&#xe7;a maternidade. Usu&#xe1;rios financiariam mais tempo para m&#xe3;es passarem com seus filhos do que os 4 meses garantidos por lei.</p>Publicado por <a href="https://www.facebook.com/jota.teles">Jota Teles</a> em&nbsp;<a href="https://www.facebook.com/jota.teles/posts/552848361544784">Terça, 2 de fevereiro de 2016</a></blockquote></div></div>
+
+
 E claro eu não podia deixar de compartilhar essa gostosura toda com vocês, né.
 
 Papel e caneta na mão e bora anotar a receita.

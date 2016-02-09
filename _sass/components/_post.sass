@@ -83,18 +83,25 @@
          text-transform: uppercase
          color: $color-text-title
       h3
-         font-size: 12px
+         font-size: 14px
          text-transform: uppercase
+         color: $color-text-title
       hr
          border-width: 1px 0 0 0
          border-style: solid
          border-top-color: $color-primary
-      blockquote
-         color: $color-gray-dark
-         background-color: $color-gray-light
+      blockquote,
+      pre
+         white-space: pre-wrap
+         background-color: $color-body-background
+         display: block
+         padding: spacing(2) spacing(1) spacing(2) spacing(2)
+         max-width: 100%
+         border-left: 2px solid $color-link
          font-style: italic
-         padding: spacing(1) spacing(2)
-         text-align: justify
+         code
+            background: none
+            color: inherit
       strong
          @include get-main-font(semibold)
          color: palette("gray", "dark")
@@ -129,3 +136,11 @@
       text-transform: none
       .natalia-post-category-name
          text-transform: uppercase
+
+   .fb-post
+      width: 100%
+      > span
+         // width: 100% !important
+         iframe
+            // width: 100% !important
+            margin-left: 0
