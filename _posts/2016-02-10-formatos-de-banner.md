@@ -33,3 +33,6 @@ Nesse post irei testar as dimensões de propagandas sugeridas para publicidade e
 ![teste de banner](http://placehold.it/1920x250)
 ![teste de banner](http://placehold.it/1079x90)
 ![teste de banner](http://placehold.it/1112x90)
+
+## Perfeito para sidebar (mas não é padrão)
+![](http://placehold.it/202x134)
