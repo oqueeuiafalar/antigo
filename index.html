@@ -5,6 +5,7 @@ layout: default
     <section class="natalia-posts-container">
       {% for post in paginator.posts %}
         <article class="natalia-post">
+            {% include widgets/post-drop-options.html %}
             <div class="natalia-post-info">
               <span class="natalia-post-date">{% include snippets/post-date.html %}</span>
               <!-- <span><strong>tags:</strong> <a href="">nada</a> , <a href="">inicial</a> </span> -->
