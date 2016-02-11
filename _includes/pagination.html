@@ -1,25 +1,25 @@
 {% if paginator.total_pages > 1 %}
     <div class="natalia-pagination">
-        <span class="natalia-pagination-count"><strong>Página {{paginator.page}}</strong> de {{paginator.total_pages}}</span>     
+        <span class="natalia-pagination-count"><strong>Página {{paginator.page}}</strong> de {{paginator.total_pages}}</span>
         <ul class="natalia-pagination-list">
-    
+
     <!-- Anterior -->
     {% if paginator.previous_page %}
             <li class="natalia-pagination-item">
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &laquo; Anterior</a>
-            </li>  
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &laquo; Página anterior</a>
+            </li>
     {% else %}
-            <li class="natalia-pagination-item natalia-pagination-item-inactive">&laquo; Anterior</li>
+            <li class="natalia-pagination-item natalia-pagination-item-inactive">&laquo; Página anterior</li>
     {% endif %}
 
     <!-- Próxima -->
     {% if paginator.next_page %}
             <li class="natalia-pagination-item">
-                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próxima &raquo;</a>
-            </li>          
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próxima página &raquo;</a>
+            </li>
     {% else %}
-            <li class="natalia-pagination-item natalia-pagination-item-inactive">Próxima &raquo;</li>
-    {% endif %}     
-        </ul>      
-    </div> 
+            <li class="natalia-pagination-item natalia-pagination-item-inactive">Próxima página &raquo;</li>
+    {% endif %}
+        </ul>
+    </div>
 {% endif %}
