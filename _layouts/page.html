@@ -1,14 +1,23 @@
 ---
 layout: default
 ---
-<div class="post">
+<section class="natalia-posts-container">
+    <article class="natalia-post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="natalia-post-info">
+          <h2 class="natalia-post-title">
+             <a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </h2>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+        </div>
+        <div class="natalia-post-content" itemprop="articleBody">
+            <meta itemprop="url" content="{{page.url | prepend: site.url }}" />
+            <meta itemprop="keywords" content="{% for tag in page.tags %}{{tag}}, {% endfor %}"/>
+            <img src="{{page.image}}" alt='Imagem de exibição para "{{page.title}}"' title="{{page.title}}" itemprop="image">
+            {{ content }}
+            </p>
+        </div>
+        {{% if page.comments == true % }}
+        {% include plugins/disqus.html %}
+        {{% endif %}}
+    </article>
+</section>
