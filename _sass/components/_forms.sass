@@ -31,3 +31,31 @@
 		line-height: 30px
 
 	// &.input-box-large
+
+.natalia-form
+	.natalia-form-group
+		margin-bottom: spacing(2)
+		input,
+		label,
+		select,
+		textarea
+			width: 100%	
+		
+		label
+			@include get-main-font(semibold)
+			line-height: 2
+
+		input,
+		select,
+		textarea
+			vertical-align: middle		
+			line-height: 20px
+			border: 1px solid palette('gray','medium')
+			padding: spacing(1)/2 spacing(1)
+			&:focus,
+			&:active,
+			&:hover
+				outline-color: $color-outline-default		
+				border-color: $color-outline-default	
+		select					
+			background-color: $color-body-background
