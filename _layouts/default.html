@@ -19,7 +19,7 @@
         <div class="natalia-header-links">
           <div class="p-float-right">
             {% include widgets/social-list.html %}
-            <span class='input-box input-box-medium'>
+            <span class='input-box input-box-medium tooltip tooltip-top' aria-label="Buscar no site">
               <input type='text' placeholder="Buscar..." class='input-box-input'>
               <i class="fa fa-search input-box-icon"></i>
             </span>
@@ -35,6 +35,9 @@
           <section class="natalia-widgets">
           {% include widgets/related-posts-sidebar.html %}
           </section>
+          <section class="natalia-widgets">
+          {% include widgets/social.html %}
+          </section>          
           <section class="natalia-widgets">
           {% include widgets/site-links.html %}
           </section>
