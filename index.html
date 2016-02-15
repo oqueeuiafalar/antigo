@@ -3,6 +3,7 @@ layout: default
 ---
 
     <section class="natalia-posts-container">
+      {% include widgets/featured-posts.html %}
       {% for post in paginator.posts %}
         <article class="natalia-post">
             {% include widgets/post-drop-options.html %}
