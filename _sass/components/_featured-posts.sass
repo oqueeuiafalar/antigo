@@ -1,6 +1,9 @@
 .natalia-featured-posts
     @include m-clearfix
     margin-bottom: spacing(3)    
+    display: none
+    @media (min-width: $screen-tablet-min)
+        display: block
 
     .natalia-featured-posts-item
         list-style: none
@@ -19,17 +22,20 @@
 
     .natalia-featured-posts-title
         font-size: 13px
+        color: $color-text-default
+        &:hover
+            color: $color-link-hover
 
     .natalia-featured-posts-link
         display: block
         
         .natalia-featured-posts-image
             opacity: .85
-            max-height: 107px
+            height: 107px
             width: 100%
             transition: all ease-in .5s
             @media (min-width: $screen-tablet-min)
-                max-height: 160px
+                height: 160px
 
         &:hover
             .natalia-featured-posts-image

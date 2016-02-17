@@ -5,7 +5,7 @@
 
     <!-- Anterior -->
     {% if paginator.previous_page %}
-            <li class="natalia-pagination-item">
+            <li class="natalia-pagination-item natalia-pagination-item-previous">
                 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &laquo; Página anterior</a>
             </li>
     {% else %}
@@ -14,7 +14,7 @@
 
     <!-- Próxima -->
     {% if paginator.next_page %}
-            <li class="natalia-pagination-item">
+            <li class="natalia-pagination-item natalia-pagination-item-next">
                 <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próxima página &raquo;</a>
             </li>
     {% else %}

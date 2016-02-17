@@ -25,7 +25,10 @@ layout: default
                   <span>{{ post.excerpt | truncatewords: 200 }}</span>
                 </a>
             </div>
-            <a href="{{ post.url | prepend: site.baseurl }}" class='p-display-inline-block'>Continue vendo</a>
+            <a href="{{ post.url | prepend: site.baseurl }}" class='btn btn-square btn-square-medium'>
+              <i class="fa fa-heart"></i>
+              <span>continue lendo</span>
+            </a>
             {% include widgets/post-options.html %}
         </article>
       {% endfor %}
