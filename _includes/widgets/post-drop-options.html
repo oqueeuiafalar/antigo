@@ -1,10 +1,12 @@
-<div class="natalia-post-drop-options">
-	<i class="natalia-post-drop-options-icon fa fa-angle-down"></i>
-	<div class="natalia-post-drop-options-dropdown">
+<div class="natalia-post-drop-options" ng-controller="dropOptionsController as vc">
+	<i 	class="natalia-post-drop-options-icon fa fa-angle-down"
+		ng-click='vc.toggleDropOptions()'
+		ng-class='{"natalia-post-drop-options-icon-active": vc.showDropOptions }'></i>
+	<div class="natalia-post-drop-options-dropdown" ng-show='vc.showDropOptions' ng-mouseleave='vc.toggleDropOptions()'>
 		<ul class="natalia-post-drop-options-dropdown-list">
 			<li class="natalia-post-drop-options-dropdown-item">
 				<a href class="natalia-post-drop-options-dropdown-link">
-					<i class="fa fa-facebook natalia-post-drop-options-dropdown-icon"></i>
+					<i class="fa fa-facebook natalia-post-drop-options-dropdown-icon"></i>					
 					<span>Compartilhar no facebook</span>
 				</a>
 			</li>
