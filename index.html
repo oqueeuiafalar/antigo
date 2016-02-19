@@ -5,7 +5,7 @@ layout: default
     <section class="natalia-posts-container">
       {% include widgets/featured-posts.html %}
       {% for post in paginator.posts %}
-        <article class="natalia-post">
+        <article class="natalia-post" ng-controller='postController as vc'>
             {% include widgets/post-drop-options.html %}
             <div class="natalia-post-info">
               <span class="natalia-post-date">{% include snippets/post-date.html %}</span>

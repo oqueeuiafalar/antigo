@@ -1,7 +1,7 @@
 (function(){
-	angular.module('natalia').controller('dropOptionsController', dropOptionsController);
+	angular.module('natalia-post').controller('postController', postController);
 
-	function dropOptionsController(){
+	function postController(){
 		var vc = this;
 		vc.showDropOptions = false;
 		vc.toggleDropOptions = toggleDropOptions;

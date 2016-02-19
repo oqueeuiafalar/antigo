@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="natalia-posts-container">
-    <article class="natalia-post" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="natalia-post" itemscope itemtype="http://schema.org/BlogPosting" ng-controller='postController as vc'>
         <div class="natalia-post-info">
           <h2 class="natalia-post-title">
              <a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a>
